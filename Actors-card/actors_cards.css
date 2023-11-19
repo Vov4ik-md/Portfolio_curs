@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap');
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: beige;
+}
+
+h1 {
+	text-align: center;
+	margin: 60px auto 150px;
+}
+
+h2 {
+	margin: 0 auto 15px 0;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+
+.inner-container-card {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	flex-basis: 310px;
+	margin-bottom: 45px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+}
+
+.name > img {
+	width: 250px;
+	height: 250px;
+	border: 5px solid white;
+	border-radius: 50%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin-top: -75px;
+	align-self: center;
+}
+
+.name > img:hover {
+	transform: translate3d(0, -10px, 0);
+	transition: transform 0.5s;
+}
+
+.tag-name {
+	display: flex;
+	justify-content: end;
+	color: rgb(133, 133, 8);
+}
+
+.film-info {
+	display: flex;
+	align-items: center;
+	border-top: 2px solid green;
+	border-bottom: 2px solid green;
+}
+
+.film-logo img {
+	width: 80px;
+}
+
+.film-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 2;
+	justify-content: flex-end;
+}
+
+.film-text-description {
+	font-size: 70%;
+}
+
+.imdb {
+	align-self: flex-end;
+	margin-top: 20px;
+}
+
+.imdb img {
+	width: 55px;
+	height: 25px;
+}
+
+.star-rating {
+	color: #e5af0e;
+	font-size: 20px;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.awards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: auto;
+}
+
+.award-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.awards p {
+	margin: 0;
+}
+
+.award-info p:first-of-type {
+	color: #e5af0e;
+}
+
+.award-info p:last-of-type {
+	color: blue;
+}
+
+.award-avatar img {
+	height: 75px;
+}
