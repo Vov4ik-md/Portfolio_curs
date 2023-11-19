@@ -14,11 +14,12 @@ html {
 :root {
 	--white: #fff;
 	--red: #dc143c;
-	--black: #111;
+	--black: #333232;
 	--color-heart: #f7630c;
 }
 
 body {
+	background-color: #aee2d2;
 	font-family: "poppins", sans-serif;
 	font-size: 16px;
 }
@@ -73,7 +74,7 @@ h2::after {
 	font-size: 20px;
 	color: var(--red);
 	padding: 0 5px;
-	background: var(--white);
+	background: #aee2d2;
 	transform: translateX(-50%);
 }
 
@@ -97,6 +98,11 @@ button {
 	cursor: pointer;
 }
 
+.download {
+	background-color: #5390d9;
+	border: 2px solid #4ea8de;
+}
+
 button:hover {
 	background: none;
 }
@@ -112,7 +118,7 @@ button:hover {
 }
 
 .card:hover {
-	background: var(--red);
+	background: #4ea8de;
 }
 
 .card .box {
@@ -151,7 +157,7 @@ button:hover {
 }
 .navbar.sticky {
 	padding: 15px 0;
-	background: #21dd95;
+	background: #48bfe3;
 }
 
 .navbar .max-width {
@@ -212,7 +218,7 @@ button:hover {
 }
 
 .active {
-	background: var(--red);
+	/*background: var(--red);*/
 	padding: 15px 0;
 }
 
@@ -397,7 +403,7 @@ button:hover {
 .line {
 	height: 5px;
 	width: 100%;
-	background: lightgrey;
+	background: #80ffdb;
 	position: relative;
 }
 
@@ -407,7 +413,7 @@ button:hover {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: var(--red);
+	background: #5e60ce;
 }
 
 	.html::before {
@@ -415,11 +421,11 @@ button:hover {
 	}
 
 	.css::before{
-		width: 50%;
+		width: 60%;
 	}
 
 	.js::before {
-		width: 5%;
+		width: 40%;
 	}
 
 	.react::before {
@@ -524,6 +530,7 @@ form .field input, form .textarea textarea {
 	font-size: 18px;
 	font-family: "Poppins", sans-serif;
 	transition: all 0.3s ease;
+	background: #80ffdb;
 }
 
 form .field input:focus,
