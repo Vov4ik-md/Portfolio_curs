@@ -70,7 +70,7 @@ btnRoll.addEventListener('click', function () {
 		const dice = Math.trunc(Math.random() * 6) + 1
 		//2 display correct image
 		diceEl.classList.remove('hidden')
-		diceEl.src = `/FE23/dice game/Jocul-cu-zaruri/src/dice-${dice}.png`;
+		diceEl.src = `/dice game/Jocul-cu-zaruri/src/dice-${dice}.png`;
 		// chekc if it's 1
 		if (dice === 1) {
 			//switch player
