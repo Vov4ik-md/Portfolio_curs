@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#">
+	<link rel="stylesheet" href="style.css">
+	<title>to do</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>My to do list</h1>
+		<div class="newtask">
+			<input type="text" size="20" maxlength="20" class="myinput" placeholder="New task...">
+			<button onclick="newTask()" class="addbtn btn">Add</button>
+		</div>
+		<div class="list">
+			<ul class="mytasks"></ul>
+		</div>
+		<div class="filterbtns">
+			<button onclick="completedTasks()" class="finished btn">Completed</button>
+			<button onclick="incompletedTasks()" class="unfinished btn">Incompleted</button>
+			<button onclick="showAll()" class="alltasks btn">All tasks</button>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+
+</html>
