@@ -464,6 +464,11 @@ button:hover {
 	content: "Get in touch";
 }
 
+.contact-content {
+	display: flex;
+	justify-content: space-between;
+}
+
 .contact-content .column {
 	width: calc(50% - 30px);
 }
@@ -495,6 +500,14 @@ button:hover {
 
 .contact-content .info .head {
 	font-weight: 500;
+}
+
+.subtitle a:link {
+	color: #222;
+}
+
+.subtitle a:visited{
+	color: #dc143c;
 }
 
 .contact-content .info .subtitle {
