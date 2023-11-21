@@ -42,7 +42,7 @@
 				<div class="text-1">Salut, ma numesc</div>
 				<div class="text-2">Vladimir Borgan</div>
 				<div class="text-3">sunt <span class="typing"></span> Developer</div>
-				<button class="download">Descarca CV</button>
+				<button class="download"><a href="/src/cv_download.txt" download>Descarca CV</a></button>
 			</div>
 		</div>
 	</section>
@@ -182,6 +182,12 @@
 							<h3>To do list</h3>
 						</div>
 					</div>
+					<div class="card">
+						<div class="box">
+							<a href="/hug cafe/HUG-Cafe/index.html" target="_blank"><img src="src/Cafe.png" alt="Cafe"></a>
+							<h3>Cafe "La Vladutz"</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -229,22 +235,22 @@
 				</div>
 				<div class="column right">
 					<h3>Lasati-mi un mesaj</h3>
-					<form action="#" name="submit-to-google-sheet">
+					<form id="contactForm" name="submit-to-google-sheet">
 						<div class="fields">
 							<div class="field name">
-								<input type="text" name="Numele" placeholder="Numele" required>
+								<input class='inputinfo' type="text" name="Numele" placeholder="Numele" required>
 							</div>
 							<div class="field email">
-								<input type="email" name="Email" placeholder="Email" required>
+								<input class='inputinfo' type="email" name="Email" placeholder="Email" required>
 							</div>
 						</div>
 						<div class="field">
-							<input type="text" name="Subiectul" placeholder="Subiectul" required>
+							<input class='inputinfo' type="text" name="Subiectul" placeholder="Subiectul" required>
 						</div>
 						<div class="field textarea">
-							<textarea cols="30" rows="10" name="Mesajul" placeholder="Mesajul" required></textarea>
+							<textarea class='inputinfo' cols="30" rows="10" name="Mesajul" placeholder="Mesajul" required></textarea>
 						</div>
-						<button type="submit">Trimite</button>
+						<button class="submit" type="submit">Trimite</button>
 					</form>
 				</div>
 			</div>

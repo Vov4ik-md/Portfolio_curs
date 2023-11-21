@@ -1,5 +1,7 @@
 const btnMore = document.querySelector('.viewmore')
 const hidden = document.querySelector('.hidden')
+const btnSubmit = document.querySelector('.submit')
+let inputInfo = document.querySelectorAll('.inputinfo')
 
 
 $(document).ready(function () {
@@ -42,6 +44,17 @@ $(document).ready(function () {
 	},false
 	)
 
+	btnSubmit.addEventListener('click', function (e) {
+		if (inputInfo.value == "") {
+			e.preventDefault()
+			alert('completeaza toate campurile')
+		} else {
+			alert("Mesajul tau a fost transmis");
+		}		
+		console.log(inputInfo.value);
+		inputInfo.value = ''
+		
+	})
 	
 	
 	//var typed = new Typed(".typing", {
