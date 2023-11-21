@@ -1,7 +1,12 @@
 const btnMore = document.querySelector('.viewmore')
 const hidden = document.querySelector('.hidden')
 const btnSubmit = document.querySelector('.submit')
-let inputInfo = document.querySelectorAll('.inputinfo')
+let inputName = document.querySelector('.numele')
+let inputMail = document.querySelector('.mail')
+let inputSubiect = document.querySelector(".subiect")
+let inputMessage = document.querySelector(".mesaj")
+
+let inputArr =[inputName, inputMail, inputSubiect, inputMessage]
 
 
 $(document).ready(function () {
@@ -45,18 +50,32 @@ $(document).ready(function () {
 	)
 
 	btnSubmit.addEventListener('click', function (e) {
-		if (inputInfo.value == "") {
-			e.preventDefault()
-			alert('completeaza toate campurile')
+		e.preventDefault
+		if (inputName.value == '' || inputMail.value == '' || inputSubiect.value == '' || inputMessage.value == '') {
+			alert('Completeaza toate campurile')
 		} else {
-			alert("Mesajul tau a fost transmis");
-		}		
-		console.log(inputInfo.value);
-		inputInfo.value = ''
-		
+			alert('Mesajul tau a fost inregistrat')
+			inputName.value = "";
+			inputMail.value = "";
+			inputSubiect.value = "";
+			inputMessage.value = "";
+		}
 	})
-	
-	
+
+
+	/*btnSubmit.addEventListener('click', function (e)  {
+		e.preventDefault
+		for (let i = 0; i <= inputArr.length; i++) {
+			if (!inputArr[i].value) {
+				alert('Completeaza toate campurile')
+			} else {
+				alert('Mesajul tau a fost inregistrat')
+				inputArr[i].value == "";
+			}
+			
+		}
+	}
+	)*/
 	//var typed = new Typed(".typing", {
 		//strings: ["FrontEnd Developer", "React Developer", "Software Developer"],
 		//typeSpeed: 100,
