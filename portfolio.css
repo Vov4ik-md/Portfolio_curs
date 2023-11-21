@@ -119,6 +119,7 @@ button:hover {
 
 .card:hover {
 	background: #4ea8de;
+	cursor: default;
 }
 
 .card .box {
@@ -369,6 +370,10 @@ button:hover {
 
 .skills-content .column {
 	width: calc(50% - 30px);
+}
+
+.hidden {
+	display: none;
 }
 
 .skills-content .left p {

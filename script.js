@@ -1,3 +1,7 @@
+const btnMore = document.querySelector('.viewmore')
+const hidden = document.querySelector('.hidden')
+
+
 $(document).ready(function () {
 	$(window).scroll(function () {
 		//sticky navbar on scroll script
@@ -29,6 +33,17 @@ $(document).ready(function () {
 		loop: true
 	});
 
+	btnMore.addEventListener('click', function () {
+		if (hidden.style.display === "none") {
+			hidden.style.display = 'block'
+		} else {
+			hidden.style.display = 'none'
+		}
+	},false
+	)
+
+	
+	
 	//var typed = new Typed(".typing", {
 		//strings: ["FrontEnd Developer", "React Developer", "Software Developer"],
 		//typeSpeed: 100,
