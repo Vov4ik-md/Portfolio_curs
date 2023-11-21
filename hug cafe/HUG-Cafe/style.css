@@ -1,0 +1,52 @@
+body {
+    background-color: darkkhaki;
+    font-size: 18px;
+    font-weight: bold;
+	 background-image: url(files/123.avif);
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inputBillAmount {
+    display: flex;
+    justify-content: center;
+}
+
+#totalbill {
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#serviceLevel {
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#peopleSplitting {
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+}
+
+.button {
+    border-radius: 7px;
+    background-color: chocolate;
+}
