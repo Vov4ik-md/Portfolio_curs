@@ -472,6 +472,7 @@ button:hover {
 .contact-content {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .contact-content .column {
