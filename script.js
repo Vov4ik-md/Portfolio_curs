@@ -54,7 +54,7 @@ $(document).ready(function () {
 		if (inputName.value == '' || inputMail.value == '' || inputSubiect.value == '' || inputMessage.value == '') {
 			alert('Completeaza toate campurile')
 		} else {
-			alert('Mesajul tau a fost inregistrat')
+			alert('"Mesajul tau a fost inregistrat" - ar fi raspnsul corect, dar la moment nu este legatura cu partea de back-end ((')
 			inputName.value = "";
 			inputMail.value = "";
 			inputSubiect.value = "";
